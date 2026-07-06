@@ -7,17 +7,17 @@
 
 </div>
 
-## 🚀 About Me
+##  About Me
 
 I'm a full-stack developer who ships fast and sweats the details. Most of my work sits at the intersection of three things I care about:
 
-- 💸 **Fintech** — market simulators, investing-education apps, and personal-finance dashboards
-- 🤖 **AI developer infrastructure** — MCP servers and tooling that make LLMs genuinely useful
-- 🎨 **Interactive web** — canvas animations, visualizers, and UI that feels alive at 60fps
+-  **Fintech** — market simulators, investing-education apps, and personal-finance dashboards
+-  **AI developer infrastructure** — MCP servers and tooling that make LLMs genuinely useful
+-  **Interactive web** — canvas animations, visualizers, and UI that feels alive at 60fps
 
 I like zero-dependency code, readable READMEs, and projects you can run in under a minute.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 <div align="center">
 
@@ -36,19 +36,19 @@ I like zero-dependency code, readable READMEs, and projects you can run in under
 
 </div>
 
-## 📌 Featured Projects
+##  Featured Projects
 
 | Project | What it does | Built with |
 |---|---|---|
-| 🔨 [**mcp-forge**](https://github.com/hilothefunnydog123-coder/mcp-forge) | Turns any OpenAPI spec into a working MCP server — give Claude tools for any REST API in 30 seconds, zero codegen | TypeScript |
-| 📈 [**quantsim**](https://github.com/hilothefunnydog123-coder/quantsim) | Monte Carlo market simulator — GBM price paths, VaR/CVaR, Sharpe & max-drawdown analytics with terminal histograms | Python · NumPy |
-| 🧭 [**pathfinding-visualizer**](https://github.com/hilothefunnydog123-coder/pathfinding-visualizer) | Watch A*, Dijkstra, BFS & Greedy Best-First race across a grid you draw — 60fps canvas, zero dependencies | JavaScript |
-| 🚦 [**ratelimit-kit**](https://github.com/hilothefunnydog123-coder/ratelimit-kit) | Token bucket, sliding window & fixed window rate limiters in one zero-dependency, fully-tested TypeScript library | TypeScript |
-| 🧠 [**neural-bg**](https://github.com/hilothefunnydog123-coder/neural-bg) | Zero-dependency animated neural-network backgrounds — a 60fps synapse-firing canvas in 3 lines, vanilla + React | TypeScript |
-| 🔍 [**gitglance**](https://github.com/hilothefunnydog123-coder/gitglance) | Beautiful git analytics in your terminal — commit punchcards, streaks, top files & author leaderboards | Python |
-| 💰 [**Nexus-finance**](https://github.com/hilothefunnydog123-coder/Nexus-finance) | Personal finance dashboard for tracking portfolios and building better money habits | TypeScript |
+|  [**mcp-forge**](https://github.com/hilothefunnydog123-coder/mcp-forge) | Turns any OpenAPI spec into a working MCP server — give Claude tools for any REST API in 30 seconds, zero codegen | TypeScript |
+|  [**quantsim**](https://github.com/hilothefunnydog123-coder/quantsim) | Monte Carlo market simulator — GBM price paths, VaR/CVaR, Sharpe & max-drawdown analytics with terminal histograms | Python · NumPy |
+|  [**pathfinding-visualizer**](https://github.com/hilothefunnydog123-coder/pathfinding-visualizer) | Watch A*, Dijkstra, BFS & Greedy Best-First race across a grid you draw — 60fps canvas, zero dependencies | JavaScript |
+|  [**ratelimit-kit**](https://github.com/hilothefunnydog123-coder/ratelimit-kit) | Token bucket, sliding window & fixed window rate limiters in one zero-dependency, fully-tested TypeScript library | TypeScript |
+|  [**neural-bg**](https://github.com/hilothefunnydog123-coder/neural-bg) | Zero-dependency animated neural-network backgrounds — a 60fps synapse-firing canvas in 3 lines, vanilla + React | TypeScript |
+|  [**gitglance**](https://github.com/hilothefunnydog123-coder/gitglance) | Beautiful git analytics in your terminal — commit punchcards, streaks, top files & author leaderboards | Python |
+|  [**Nexus-finance**](https://github.com/hilothefunnydog123-coder/Nexus-finance) | Personal finance dashboard for tracking portfolios and building better money habits | TypeScript |
 
-## 📊 GitHub Stats
+##  GitHub Stats
 
 <div align="center">
 
@@ -59,7 +59,7 @@ I like zero-dependency code, readable READMEs, and projects you can run in under
 
 </div>
 
-## 🌱 Currently
+##  Currently
 
 - Building out **quant tooling** — simulation, risk metrics, and backtesting utilities
 - Going deeper on the **Model Context Protocol** and agentic developer workflows
@@ -69,6 +69,6 @@ I like zero-dependency code, readable READMEs, and projects you can run in under
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00c9a7,100:1a2a6c&height=110&section=footer" width="100%"/>
 
-*Thanks for stopping by — the pinned repos below are the best place to start.* ⭐
+*Thanks for stopping by — the pinned repos below are the best place to start.* 
 
 </div>
