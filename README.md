@@ -41,7 +41,7 @@ I like zero-dependency code, readable READMEs, and projects you can run in under
 | Project | What it does | Built with |
 |---|---|---|
 |  [**mcp-forge**](https://github.com/hilothefunnydog123-coder/mcp-forge) | Turns any OpenAPI spec into a working MCP server — give Claude tools for any REST API in 30 seconds, zero codegen | TypeScript |
-|  [**quantsim**](https://github.com/hilothefunnydog123-coder/quantsim) | Monte Carlo market simulator — GBM price paths, VaR/CVaR, Sharpe & max-drawdown analytics with terminal histograms | Python · NumPy |
+|  [**quantsim**](https://github.com/hilothefunnydog123-coder/quantsim) | Full quant trading stack — backtesting engine, price-time priority order book with market-impact execution modeling, Monte Carlo risk analytics, and a live paper-trading bot that commits its P&L to git | Python · NumPy |
 |  [**pathfinding-visualizer**](https://github.com/hilothefunnydog123-coder/pathfinding-visualizer) | Watch A*, Dijkstra, BFS & Greedy Best-First race across a grid you draw — 60fps canvas, zero dependencies | JavaScript |
 |  [**ratelimit-kit**](https://github.com/hilothefunnydog123-coder/ratelimit-kit) | Token bucket, sliding window & fixed window rate limiters in one zero-dependency, fully-tested TypeScript library | TypeScript |
 |  [**neural-bg**](https://github.com/hilothefunnydog123-coder/neural-bg) | Zero-dependency animated neural-network backgrounds — a 60fps synapse-firing canvas in 3 lines, vanilla + React | TypeScript |
