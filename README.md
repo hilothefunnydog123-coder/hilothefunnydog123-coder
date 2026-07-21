@@ -8,6 +8,11 @@
 
 <br/><br/>
 
+**I build the full quantitative-finance stack — a matching engine, the pricing math, a backtester, and a language to write strategies in — then use it to test trading ideas *honestly* in a monthly research lab, publishing what the data really says (null results included).**
+
+<br/>
+
+[![Research](https://img.shields.io/badge/🔬%20Neil%20Quant%20Labs-read%20the%20research-3fb950?style=for-the-badge)](https://github.com/hilothefunnydog123-coder/quant-research)
 [![Email](https://img.shields.io/badge/Email-dlake003%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dlake003@gmail.com)
 [![GitHub followers](https://img.shields.io/github/followers/hilothefunnydog123-coder?style=for-the-badge&logo=github&color=181717)](https://github.com/hilothefunnydog123-coder)
 
@@ -17,9 +22,25 @@
 
 <div align="center">
 
-| 🧪 Tests passing | 🏦 Quant repos | ⚙️ Pricing engines | 🗣️ Languages designed | ⚡ Order book |
+| 🧪 Tests passing | 🔬 Research papers | 🏦 Quant repos | 🧮 Pricing engines | ⚡ Order book |
 |:--:|:--:|:--:|:--:|:--:|
-| **140+** | **5** | **3** cross-validating | **1** (lexer→parser→interpreter) | **165k** orders/sec |
+| **140+** | **3** · reproducible | **6** | **3** cross-validating | **165k** orders/sec |
+
+</div>
+
+## 🔬 Neil Quant Labs — I run a monthly research lab
+
+> **A question, an experiment, an honest answer — including the null ones.** Most projects claim to *find* edges; this lab rigorously tests whether claimed edges are *real*, and reports what the data actually says. Every note is a hypothesis fixed in advance, a reproducible experiment with no lookahead, and a written paper — findings that stand on their own, especially when the answer is "it doesn't work."
+
+| # | Question | Honest finding |
+|:--:|---|---|
+| **001** | Do backtests overstate performance? | A 1-line lookahead bug inflates a strategy's Sharpe by **+1.12**; cherry-picking 337 strategies on random data fakes a **0.77** Sharpe that flips to **−0.54** out-of-sample |
+| **002** | Does volatility predict next-day *direction*? | Across 2,881 days of SPY, today's volatility → tomorrow's return correlation is **+0.035** — no meaningful directional edge (R² ≈ 0.1%) |
+| **003** | Momentum vs. mean reversion, after costs? | Over 4,916 days, **neither beats buy-and-hold** — but each is a regime bet: mean reversion earns a **1.07** Sharpe in bear markets, then its ~6× turnover lets 5bp costs turn it **negative** |
+
+<div align="center">
+
+**[📄 Read the papers](https://github.com/hilothefunnydog123-coder/quant-research)** · **[🔁 Reproduce any note](https://github.com/hilothefunnydog123-coder/quant-research#reproduce-any-note)** · **[📌 Cite this work](https://github.com/hilothefunnydog123-coder/quant-research#license--citation)** · *open to contributors*
 
 </div>
 
@@ -37,21 +58,21 @@
 
 ## 🚀 About me
 
-I'm a developer who got curious about how markets *actually* work — so I built the whole stack to find out: a matching engine, the pricing math, a backtester, a live trading bot, and finally a language to write strategies in. I like zero-dependency code, tests that assert real properties (not just "it runs"), and projects you can run in under a minute.
+I got curious about how markets *actually* work — so I built the whole stack to find out: a matching engine, the pricing math, a backtester, a live trading bot, and finally a language to write strategies in. Then I started a research lab to point that stack at real data and test popular trading ideas the honest way — hypothesis first, no lookahead, realistic costs, and the null results published alongside the wins. I like zero-dependency code, tests that assert real properties (not just "it runs"), and work you can reproduce in under a minute.
 
-- 💸 **Quantitative finance** — backtesting, options pricing, market microstructure
+- 💸 **Quantitative finance** — backtesting, options pricing, market microstructure, honest strategy evaluation
+- 🔬 **Research** — reproducible experiments, dual-licensed papers, methodology over hype
 - 🤖 **AI developer tooling** — MCP servers and infrastructure for LLMs
-- 🎨 **Interactive & systems** — canvas visualizers, matching engines, a DSL
 
 ## 📌 Featured projects
 
 | Project | What it does | Built with |
 |---|---|---|
+| 🔬 [**quant-research**](https://github.com/hilothefunnydog123-coder/quant-research) | **Neil Quant Labs** — monthly, peer-reviewable quant research. Reproducible experiments + written papers that report the honest answer, null results included. Open to contributors | Python |
 | 📈 [**quantsim**](https://github.com/hilothefunnydog123-coder/quantsim) | Full quant stack — backtesting engine, price-time-priority order book with market-impact execution, Monte Carlo risk analytics, and a live paper-trading bot that commits its P&L to git | Python · NumPy |
 | 🏛️ [**exchange-simulator**](https://github.com/hilothefunnydog123-coder/exchange-simulator) | Agent-based market where fat tails, volatility clustering & flash crashes *emerge* from autonomous traders — statistically verified | Python |
 | 📜 [**quantlang**](https://github.com/hilothefunnydog123-coder/quantlang) | A programming language for trading strategies — hand-written lexer, parser & interpreter; compiled output proven bitwise-identical to hand-written Python | Python |
 | 🧮 [**optionslab**](https://github.com/hilothefunnydog123-coder/optionslab) | Options pricing with three independent engines that cross-validate to 4 decimals — Black–Scholes, binomial trees, Monte Carlo — plus Greeks & implied vol | Python |
-| 🔨 [**mcp-forge**](https://github.com/hilothefunnydog123-coder/mcp-forge) | Turns any OpenAPI spec into a working MCP server — Claude tools for any REST API in 30 seconds | TypeScript |
 | 🧭 [**pathfinding-visualizer**](https://github.com/hilothefunnydog123-coder/pathfinding-visualizer) | Watch A*, Dijkstra, BFS & Greedy race across a grid you draw — 60fps canvas, zero deps | JavaScript |
 
 ## 🛠️ Tech stack

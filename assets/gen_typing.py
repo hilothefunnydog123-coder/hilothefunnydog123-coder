@@ -3,11 +3,12 @@
 from __future__ import annotations
 
 PHRASES = [
-    "quant developer",
+    "quant researcher & developer",
+    "I run a monthly research lab",
+    "I test trading ideas honestly",
     "market simulators & backtesters",
     "I wrote a programming language",
     "three option-pricing engines",
-    "fintech founder",
 ]
 
 W, H = 760, 54
