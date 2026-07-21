@@ -1,4 +1,5 @@
-# Regenerates the animated banner and the strategy tracker every morning,
+# Regenerates the animated banner, the live strategy tracker (real SPY), the
+# animated order book & Monte Carlo SVGs, and the research digest every morning,
 # then commits them back — so the profile is never static.
 name: profile
 
@@ -11,6 +12,9 @@ on:
     paths:
       - assets/gen_banner.py
       - assets/gen_tracker.py
+      - assets/gen_orderbook.py
+      - assets/gen_montecarlo.py
+      - assets/gen_digest.py
       - .github/workflows/profile.yml
 
 permissions:
@@ -35,10 +39,19 @@ jobs:
       - name: Update strategy tracker (real SPY, falls back to sample)
         run: python assets/gen_tracker.py
 
+      - name: Regenerate animated order book
+        run: python assets/gen_orderbook.py
+
+      - name: Regenerate Monte Carlo pricing animation
+        run: python assets/gen_montecarlo.py
+
+      - name: Refresh research digest from Neil Quant Labs
+        run: python assets/gen_digest.py
+
       - name: Commit if changed
         run: |
           git config user.name "hilothefunnydog123-coder"
           git config user.email "229661712+hilothefunnydog123-coder@users.noreply.github.com"
-          git add assets/banner.svg assets/equity.svg README.md
+          git add assets/banner.svg assets/equity.svg assets/orderbook.svg assets/montecarlo.svg README.md
           git diff --cached --quiet || git commit -m "chore: daily profile refresh"
           git push

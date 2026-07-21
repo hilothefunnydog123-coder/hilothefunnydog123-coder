@@ -30,6 +30,12 @@
 
 ## 🔬 Neil Quant Labs — I run a monthly research lab
 
+<!--DIGEST:START-->
+> 🔬 **Latest from [Neil Quant Labs](https://github.com/hilothefunnydog123-coder/quant-research):** **Note 003 — Momentum vs. mean reversion across regimes, after costs?** → *Over 4,916 days of SPY, neither beats buy-and-hold (Sharpe 0.63) after costs — but each is a regime bet: momentum leads in bull markets, mean reversion earns 1.07 in bear markets, then its ~6× turnover lets 5bp costs turn it negative.* &nbsp;[**read the paper →**](https://github.com/hilothefunnydog123-coder/quant-research)
+>
+> 🧫 **Currently researching:** Note 004 — *How effective are liquidity-grab / FVG setups, statistically?*
+<!--DIGEST:END-->
+
 > **A question, an experiment, an honest answer — including the null ones.** Most projects claim to *find* edges; this lab rigorously tests whether claimed edges are *real*, and reports what the data actually says. Every note is a hypothesis fixed in advance, a reproducible experiment with no lookahead, and a written paper — findings that stand on their own, especially when the answer is "it doesn't work."
 
 | # | Question | Honest finding |
@@ -53,8 +59,21 @@
 
 | as of | strategy | buy & hold | verdict |
 |:--|:--|:--|:--|
-| `2026-07-20` on sample series (offline) | **+60.9%** · Sharpe 0.72 · maxDD -21.3% | +14.6% · Sharpe 0.22 | ✅ beating buy & hold |
+| `2026-07-21` on sample series (offline) | **+60.9%** · Sharpe 0.72 · maxDD -21.3% | +14.6% · Sharpe 0.22 | ✅ beating buy & hold |
 <!--TRACKER:END-->
+
+## 🎛️ Engine room — everything below is animated, zero JavaScript
+
+> Two ideas from my repos, brought to life as pure self-animating SVG (SMIL) — regenerated daily by the same Action. Left: a limit **order book** matching engine. Right: **Monte Carlo** option pricing converging to Black–Scholes.
+
+<div align="center">
+
+<img src="assets/orderbook.svg" width="49%" alt="animated limit order book"/>
+<img src="assets/montecarlo.svg" width="49%" alt="Monte Carlo option pricing"/>
+
+<sub>Market microstructure from [exchange-simulator](https://github.com/hilothefunnydog123-coder/exchange-simulator) · pricing math from [optionslab](https://github.com/hilothefunnydog123-coder/optionslab)</sub>
+
+</div>
 
 ## 🚀 About me
 

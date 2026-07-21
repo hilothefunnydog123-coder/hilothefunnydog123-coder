@@ -13,6 +13,7 @@ from __future__ import annotations
 import datetime as dt
 import os
 import re
+import urllib.request
 
 from quantsim import SMACrossover, load_csv, run_backtest
 
@@ -20,6 +21,45 @@ try:
     from quantsim import fetch
 except ImportError:  # pragma: no cover
     fetch = None
+
+# Stooq serves keyless daily OHLC CSV and is reachable from CI runners (unlike
+# most APIs that rate-limit cloud IPs) — this is what makes the tracker *real*.
+STOOQ_URL = "https://stooq.com/q/d/l/?s={sym}&i=d"
+LOOKBACK_DAYS = 780  # ~3 trading years kept for the track record
+
+
+class _Series:
+    """Minimal stand-in for quantsim.PriceSeries: just closes + dates."""
+
+    def __init__(self, closes, dates):
+        self.closes = closes
+        self.dates = dates
+
+
+def fetch_stooq(ticker: str = "SPY") -> _Series:
+    """Pull real daily closes from stooq (no API key). Raises on any problem so
+    the caller can fall back."""
+    sym = ticker.lower() + ".us"
+    req = urllib.request.Request(STOOQ_URL.format(sym=sym),
+                                 headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        text = resp.read().decode("utf-8", "replace")
+    lines = text.strip().splitlines()
+    if len(lines) < 250 or not lines[0].lower().startswith("date"):
+        raise RuntimeError(f"stooq returned {len(lines)} lines (header={lines[:1]})")
+    dates, closes = [], []
+    for ln in lines[1:]:
+        parts = ln.split(",")
+        if len(parts) < 5:
+            continue
+        try:
+            closes.append(float(parts[4]))  # Date,Open,High,Low,Close,Volume
+            dates.append(parts[0])
+        except ValueError:
+            continue
+    if len(closes) < 250:
+        raise RuntimeError(f"stooq: only {len(closes)} valid closes")
+    return _Series(closes[-LOOKBACK_DAYS:], dates[-LOOKBACK_DAYS:])
 
 HERE = os.path.dirname(__file__)
 ROOT = os.path.dirname(HERE)
@@ -33,13 +73,21 @@ GREEN, BLUE, BG, GRID, TEXT, DIM = "#3fb950", "#58a6ff", "#0d1117", "#1b2230", "
 
 
 def get_series():
-    """Return (label, PriceSeries). Real SPY if reachable, else bundled sample."""
+    """Return (label, series). Real SPY if reachable, else bundled sample.
+    Tries stooq (keyless, CI-friendly) first, then quantsim.fetch, then sample."""
+    try:
+        s = fetch_stooq("SPY")
+        print(f"stooq OK: {len(s.closes)} real SPY closes")
+        return "real SPY, daily", s
+    except Exception as exc:
+        print(f"stooq failed ({exc})")
     if fetch is not None:
         try:
             start = (dt.date.today() - dt.timedelta(days=365 * 3)).isoformat()
-            return "SPY (real, daily)", fetch("SPY", start=start)
+            return "real SPY, daily", fetch("SPY", start=start)
         except Exception as exc:  # network / source down
-            print(f"fetch failed ({exc}); using bundled sample")
+            print(f"quantsim fetch failed ({exc})")
+    print("using bundled sample series (offline)")
     return "sample series (offline)", load_csv(SAMPLE)
 
 
