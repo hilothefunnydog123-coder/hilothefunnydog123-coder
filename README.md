@@ -28,10 +28,10 @@
 
 </div>
 
-## 🔬 Neil Quant Labs — I run a monthly research lab
+## 🔬 Martingale — I run a monthly research lab
 
 <!--DIGEST:START-->
-> 🔬 **Latest from [Neil Quant Labs](https://github.com/hilothefunnydog123-coder/quant-research):** **Note 003 — Momentum vs. mean reversion across regimes, after costs?** → *Over 4,916 days of SPY, neither beats buy-and-hold (Sharpe 0.63) after costs — but each is a regime bet: momentum leads in bull markets, mean reversion earns 1.07 in bear markets, then its ~6× turnover lets 5bp costs turn it negative.* &nbsp;[**read the paper →**](https://github.com/hilothefunnydog123-coder/quant-research)
+> 🔬 **Latest from [Martingale](https://github.com/hilothefunnydog123-coder/quant-research):** **Note 003 — Momentum vs. mean reversion across regimes, after costs?** → *Over 4,916 days of SPY, neither beats buy-and-hold (Sharpe 0.63) after costs — but each is a regime bet: momentum leads in bull markets, mean reversion earns 1.07 in bear markets, then its ~6× turnover lets 5bp costs turn it negative.* &nbsp;[**read the paper →**](https://github.com/hilothefunnydog123-coder/quant-research)
 >
 > 🧫 **Currently researching:** Note 004 — *How effective are liquidity-grab / FVG setups, statistically?*
 <!--DIGEST:END-->
@@ -87,7 +87,7 @@ I got curious about how markets *actually* work — so I built the whole stack t
 
 | Project | What it does | Built with |
 |---|---|---|
-| 🔬 [**quant-research**](https://github.com/hilothefunnydog123-coder/quant-research) | **Neil Quant Labs** — monthly, peer-reviewable quant research. Reproducible experiments + written papers that report the honest answer, null results included. Open to contributors | Python |
+| 🔬 [**quant-research**](https://github.com/hilothefunnydog123-coder/quant-research) | **Martingale** — monthly, peer-reviewable quant research. Reproducible experiments + written papers that report the honest answer, null results included. Open to contributors | Python |
 | 📈 [**quantsim**](https://github.com/hilothefunnydog123-coder/quantsim) | Full quant stack — backtesting engine, price-time-priority order book with market-impact execution, Monte Carlo risk analytics, and a live paper-trading bot that commits its P&L to git | Python · NumPy |
 | 🏛️ [**exchange-simulator**](https://github.com/hilothefunnydog123-coder/exchange-simulator) | Agent-based market where fat tails, volatility clustering & flash crashes *emerge* from autonomous traders — statistically verified | Python |
 | 📜 [**quantlang**](https://github.com/hilothefunnydog123-coder/quantlang) | A programming language for trading strategies — hand-written lexer, parser & interpreter; compiled output proven bitwise-identical to hand-written Python | Python |

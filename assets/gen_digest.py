@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Auto research digest for the profile README.
 
-Pulls the live notes table from the Neil Quant Labs (quant-research) repo,
+Pulls the live notes table from the Martingale (quant-research) repo,
 figures out (1) the most recent *completed* research note and its finding, and
 (2) the next *planned* note ("currently researching"), and injects a compact,
 always-current digest into the profile README between the DIGEST markers.
@@ -92,7 +92,7 @@ def get_digest():
 
 def build_block(d: dict) -> str:
     return f"""<!--DIGEST:START-->
-> 🔬 **Latest from [Neil Quant Labs]({REPO}):** **Note {d['done_num']} — {d['done_q']}** → *{d['done_find']}.* &nbsp;[**read the paper →**]({REPO})
+> 🔬 **Latest from [Martingale]({REPO}):** **Note {d['done_num']} — {d['done_q']}** → *{d['done_find']}.* &nbsp;[**read the paper →**]({REPO})
 >
 > 🧫 **Currently researching:** Note {d['next_num']} — *{d['next_q']}*
 <!--DIGEST:END-->"""
