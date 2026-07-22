@@ -31,9 +31,9 @@
 ## 🔬 Martingale — I run a monthly research lab
 
 <!--DIGEST:START-->
-> 🔬 **Latest from [Martingale](https://github.com/hilothefunnydog123-coder/quant-research):** **Note 003 — Momentum vs. mean reversion across regimes, after costs?** → *Over 4,916 days of SPY, neither beats buy-and-hold (Sharpe 0.63) after costs — but each is a regime bet: momentum leads in bull markets, mean reversion earns 1.07 in bear markets, then its ~6× turnover lets 5bp costs turn it negative.* &nbsp;[**read the paper →**](https://github.com/hilothefunnydog123-coder/quant-research)
+> 🔬 **Latest from [Martingale](https://github.com/hilothefunnydog123-coder/quant-research):** **Note 004 — How effective are liquidity-grab / FVG setups, statistically?** → *Across 2,903 days of SPY, no edge: at 1 day nothing is significant; the 5-day "significant" results are just market drift, and the bearish patterns are followed by the largest positive moves — the opposite of the claim.* &nbsp;[**read the paper →**](https://github.com/hilothefunnydog123-coder/quant-research)
 >
-> 🧫 **Currently researching:** Note 004 — *How effective are liquidity-grab / FVG setups, statistically?*
+> 🧫 **Currently researching:** Note 005 — *Where do SPY's returns actually come from — overnight vs. intraday?*
 <!--DIGEST:END-->
 
 > **A question, an experiment, an honest answer — including the null ones.** Most projects claim to *find* edges; this lab rigorously tests whether claimed edges are *real*, and reports what the data actually says. Every note is a hypothesis fixed in advance, a reproducible experiment with no lookahead, and a written paper — findings that stand on their own, especially when the answer is "it doesn't work."
@@ -59,7 +59,7 @@
 
 | as of | strategy | buy & hold | verdict |
 |:--|:--|:--|:--|
-| `2026-07-21` on sample series (offline) | **+60.9%** · Sharpe 0.72 · maxDD -21.3% | +14.6% · Sharpe 0.22 | ✅ beating buy & hold |
+| `2026-07-22` on sample series (offline) | **+60.9%** · Sharpe 0.72 · maxDD -21.3% | +14.6% · Sharpe 0.22 | ✅ beating buy & hold |
 <!--TRACKER:END-->
 
 ## 🎛️ Engine room — everything below is animated, zero JavaScript
