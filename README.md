@@ -59,7 +59,7 @@
 
 | as of | strategy | buy & hold | verdict |
 |:--|:--|:--|:--|
-| `2026-07-22` on sample series (offline) | **+60.9%** · Sharpe 0.72 · maxDD -21.3% | +14.6% · Sharpe 0.22 | ✅ beating buy & hold |
+| `2026-07-23` on sample series (offline) | **+60.9%** · Sharpe 0.72 · maxDD -21.3% | +14.6% · Sharpe 0.22 | ✅ beating buy & hold |
 <!--TRACKER:END-->
 
 ## 🎛️ Engine room — everything below is animated, zero JavaScript
