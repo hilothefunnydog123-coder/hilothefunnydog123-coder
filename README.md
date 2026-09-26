@@ -31,9 +31,9 @@
 ## 🔬 Martingale — I run a monthly research lab
 
 <!--DIGEST:START-->
-> 🔬 **Latest from [Martingale](https://github.com/hilothefunnydog123-coder/quant-research):** **Note 004 — How effective are liquidity-grab / FVG setups, statistically?** → *Across 2,903 days of SPY, no edge: at 1 day nothing is significant; the 5-day "significant" results are just market drift, and the bearish patterns are followed by the largest positive moves — the opposite of the claim.* &nbsp;[**read the paper →**](https://github.com/hilothefunnydog123-coder/quant-research)
+> 🔬 **Latest from [Martingale](https://github.com/hilothefunnydog123-coder/quant-research):** **Note 006 — Do stop-losses actually improve risk-adjusted returns?** → *Across 5,031 days of the NASDAQ Composite, the edge is the search: the best of 30 stop rules beats buy-and-hold by +0.094 Sharpe, and the same search on shuffled bars with every trend destroyed beats it by +0.095 (p = 0.43). Picking the winner on history then loses −0.166 forward, and in-sample rank anti-predicts out-of-sample (−0.28). Real findings: 20.6% of stops gap through their price.* &nbsp;[**read the paper →**](https://github.com/hilothefunnydog123-coder/quant-research)
 >
-> 🧫 **Currently researching:** Note 005 — *Where do SPY's returns actually come from — overnight vs. intraday?*
+> 🧫 **Currently researching:** Note 007 — *How much history do you need to tell skill from luck?*
 <!--DIGEST:END-->
 
 > **A question, an experiment, an honest answer — including the null ones.** Most projects claim to *find* edges; this lab rigorously tests whether claimed edges are *real*, and reports what the data actually says. Every note is a hypothesis fixed in advance, a reproducible experiment with no lookahead, and a written paper — findings that stand on their own, especially when the answer is "it doesn't work."
@@ -59,7 +59,7 @@
 
 | as of | strategy | buy & hold | verdict |
 |:--|:--|:--|:--|
-| `2026-09-25` on sample series (offline) | **+60.9%** · Sharpe 0.72 · maxDD -21.3% | +14.6% · Sharpe 0.22 | ✅ beating buy & hold |
+| `2026-09-26` on sample series (offline) | **+60.9%** · Sharpe 0.72 · maxDD -21.3% | +14.6% · Sharpe 0.22 | ✅ beating buy & hold |
 <!--TRACKER:END-->
 
 ## 🎛️ Engine room — everything below is animated, zero JavaScript
